@@ -64,14 +64,14 @@ public class CreateAccountActivity extends AppCompatActivity {
 
         // thuc hien test
         if(Username.isEmpty() || Username.equals("")){
-            showErrow(inputUsername," Email Là Không Hợp Lệ!");
+            showErrow(inputUsername," Email Is Invalid!");
         }else if (Password.isEmpty() || Password.length()<5){
-            showErrow(inputpass, "PassWord trống hoặc nhỏ hơn 5 kí tự!");
+            showErrow(inputpass, "PassWord is blank or less than 5 characters!!");
         }else if (!Password.equals(nhaplaipass)){
-            showErrow(inputconfrimpass, "Password Bạn Nhập không giống nhau!");
+            showErrow(inputconfrimpass, "The password you entered is not the same!");
         }else{
-            mloasdingbar.setTitle("Tạo Tài Khoản");
-            mloasdingbar.setMessage("Vui Lòng Chờ Giây Lát");
+            mloasdingbar.setTitle("Create Account");
+            mloasdingbar.setMessage("Please Wait A Moment");
             mloasdingbar.setCanceledOnTouchOutside(false);
             mloasdingbar.show();
             mAuth.createUserWithEmailAndPassword(Username,Password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -79,7 +79,7 @@ public class CreateAccountActivity extends AppCompatActivity {
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if(task.isSuccessful()){
                         mloasdingbar.dismiss();
-                        Toast.makeText(CreateAccountActivity.this, "Tạo tài khoản thành công", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(CreateAccountActivity.this, "Create Account Success", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(CreateAccountActivity.this,LoginActivity.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intent);
@@ -87,7 +87,7 @@ public class CreateAccountActivity extends AppCompatActivity {
 
                     }else{
                         mloasdingbar.dismiss();
-                        Toast.makeText(CreateAccountActivity.this, "Tạo tài khoản không thành công", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(CreateAccountActivity.this, "Account creation failed", Toast.LENGTH_SHORT).show();
                     }
                 }
             });

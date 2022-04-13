@@ -28,7 +28,7 @@ import com.squareup.picasso.Picasso;
 public class FindFriendActivity extends AppCompatActivity {
 
     FirebaseRecyclerOptions<Users> options;
-    FirebaseRecyclerAdapter<Users,FindFriendViewHolder> adapter;
+    FirebaseRecyclerAdapter<Users, FindFriendViewHolder> adapter;
     Toolbar toolbar;
 
     DatabaseReference mUserRef, friendRef;
@@ -51,7 +51,7 @@ public class FindFriendActivity extends AppCompatActivity {
         friendRef = FirebaseDatabase.getInstance().getReference().child("Friends");
         mAuth = FirebaseAuth.getInstance();
         mUser = mAuth.getCurrentUser();
-        recyclerView  = findViewById(R.id.reyclerView);
+        recyclerView = findViewById(R.id.reyclerView);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
@@ -60,29 +60,27 @@ public class FindFriendActivity extends AppCompatActivity {
     }
 
     private void LoadUser(String s) {
-        Query query = mUserRef.orderByChild("username").startAt(s).endAt(s+"\uf8ff");
+        Query query = mUserRef.orderByChild("username").startAt(s).endAt(s + "\uf8ff");
         options = new FirebaseRecyclerOptions.Builder<Users>().setQuery(query, Users.class).build();
         adapter = new FirebaseRecyclerAdapter<Users, FindFriendViewHolder>(options) {
             @Override
             protected void onBindViewHolder(@NonNull FindFriendViewHolder holder, final int position, @NonNull Users model) {
-                if(!mUser.getUid().equals(getRef(position).getKey().toString())){
+                if (!mUser.getUid().equals(getRef(position).getKey().toString())) {
                     Picasso.get().load(model.getProfileImage()).into(holder.profileImage);
                     holder.username.setText(model.getUsername());
                     holder.profession.setText(model.getNghenghiep());
                     // Toast.makeText(FindFriendActivity.this, ""+mUser.getUid(), Toast.LENGTH_SHORT).show();
 
-                }
-                else
-                {
+                } else {
                     holder.itemView.setVisibility(View.GONE);
-                    holder.itemView.setLayoutParams(new RecyclerView.LayoutParams(0,0));
+                    holder.itemView.setLayoutParams(new RecyclerView.LayoutParams(0, 0));
                 }
                 holder.itemView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
                         // call activity new
-                        Intent intent = new Intent(FindFriendActivity.this,ViewFriendActivity.class);
-                        intent.putExtra("userkey",getRef(position).getKey().toString());// send data to new Activity
+                        Intent intent = new Intent(FindFriendActivity.this, ViewFriendActivity.class);
+                        intent.putExtra("userkey", getRef(position).getKey().toString());// send data to new Activity
                         startActivity(intent);
                     }
                 });
@@ -92,7 +90,7 @@ public class FindFriendActivity extends AppCompatActivity {
             @NonNull
             @Override
             public FindFriendViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-                View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.tim_kiem_ban_be,parent,false);
+                View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.tim_kiem_ban_be, parent, false);
                 return new FindFriendViewHolder(view);
             }
         };
@@ -103,21 +101,26 @@ public class FindFriendActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.search_menu ,menu);
+        getMenuInflater().inflate(R.menu.search_menu, menu);
         MenuItem menuItem = menu.findItem(R.id.search);
-        SearchView searchView = (SearchView) menuItem.getActionView();
-        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-            @Override
-            public boolean onQueryTextSubmit(String query) {
-                return false;
-            }
+        try {
+            SearchView searchView = (SearchView) menuItem.getActionView();
+            searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+                @Override
+                public boolean onQueryTextSubmit(String query) {
+                    return false;
+                }
 
-            @Override
-            public boolean onQueryTextChange(String newText) {
-                LoadUser(newText);
-                return false;
-            }
-        });
+                @Override
+                public boolean onQueryTextChange(String newText) {
+                    LoadUser(newText);
+                    return false;
+                }
+            });
+        } catch (ClassCastException e) {
+
+        }
+
         return true;
     }
 }

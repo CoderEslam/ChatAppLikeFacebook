@@ -16,6 +16,6 @@ public class about_app extends AppCompatActivity {
         setContentView(R.layout.activity_about_app);
         toolbar  =  findViewById(R.id.app_bar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Giới Thiệu");
+        getSupportActionBar().setTitle("Introduce");
     }
 }
