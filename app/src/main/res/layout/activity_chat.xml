@@ -31,7 +31,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@drawable/edit_input_send_chat"
-            android:hint="Nhập tin nhắn...."
+            android:hint="@string/enter_message"
             android:padding="7dp"
             android:paddingStart="20dp"
             android:textSize="18sp"

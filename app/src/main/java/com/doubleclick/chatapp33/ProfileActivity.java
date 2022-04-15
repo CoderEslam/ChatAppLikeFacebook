@@ -116,7 +116,7 @@ public class ProfileActivity extends AppCompatActivity {
                 new AlertDialog.Builder(ProfileActivity.this).setPositiveButton("Xem Ảnh Bìa", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        Intent intent  =  new Intent(ProfileActivity.this , XemHinhAnhActivity.class);
+                        Intent intent  =  new Intent(ProfileActivity.this , SeePicturesActivity.class);
                         intent.putExtra("urlImage",imageUrlAnhBia ); // gửi địa chỉ của hình ảnh nhận được thông qua intent
                         startActivity(intent);
                     }
@@ -141,7 +141,7 @@ public class ProfileActivity extends AppCompatActivity {
                         .setPositiveButton("Xem Ảnh", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {
-                                Intent intent  =  new Intent(ProfileActivity.this , XemHinhAnhActivity.class);
+                                Intent intent  =  new Intent(ProfileActivity.this , SeePicturesActivity.class);
                                 intent.putExtra("urlImage",imageUrlAnhDaiDien ); // gửi địa chỉ của hình ảnh nhận được thông qua intent
                                 startActivity(intent);
                             }

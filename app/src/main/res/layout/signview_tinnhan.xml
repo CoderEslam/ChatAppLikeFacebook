@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -25,7 +24,7 @@
         android:background="@drawable/first_user_text_tinnhan"
         android:padding="3dp"
         android:paddingStart="5dp"
-        android:text="tinnhan"
+        android:text="@string/hi"
         android:textColor="@color/colorWhile"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/firstUserProfile"
@@ -54,7 +53,7 @@
         android:background="@drawable/first_user_text_tinnhan"
         android:padding="3dp"
         android:paddingStart="5dp"
-        android:text="tinnhan"
+        android:text="@string/hi"
         android:textColor="@color/colorWhile"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/secondUserProfile"
@@ -70,8 +69,8 @@
         android:layout_height="200dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="8dp"
-        android:visibility="gone"
         android:scaleType="center"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/secondtUserText"
         app:srcCompat="@drawable/ic_image_send_chat" />

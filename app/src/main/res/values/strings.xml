@@ -1,4 +1,19 @@
 <resources>
     <string name="app_name">ChatApp33</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="create_a_new_account">Create a new account.</string>
+    <string name="log_in">Log in</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="chatapp">ChatApp</string>
+    <string name="email">Email</string>
+    <string name="password">PassWord</string>
+    <string name="enter_email_to_recover_password">Enter Email to recover password:</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="send_require">Send require</string>
+    <string name="enter_message">Enter message....</string>
+    <string name="username">Username</string>
+    <string name="online_1_minute_ago">Online 1 minute ago</string>
+    <string name="how_do_you_feel_today">How do you feel today?</string>
+    <string name="display_name">Display name :</string>
+    <string name="hi">Hi</string>
 </resources>

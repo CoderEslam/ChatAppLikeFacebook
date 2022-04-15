@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:layout_marginEnd="24dp"
-        android:text="Hủy Bỏ"
+        android:text="Cancel"
 
         android:background="@drawable/round_edit_profile"
         android:alpha="0.25"

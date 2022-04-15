@@ -4,9 +4,28 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AndroidStudioProjects/ChatApp33/app/src/main/res/layout/activity_about_app.xml" value="0.2604166666666667" />
+        <entry key="..\:/AndroidStudioProjects/ChatApp33/app/src/main/res/layout/activity_chat.xml" value="0.18871794871794872" />
+        <entry key="..\:/AndroidStudioProjects/ChatApp33/app/src/main/res/layout/activity_create_account.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/ChatApp33/app/src/main/res/layout/activity_danh__sach__ban__be.xml" value="0.18871794871794872" />
+        <entry key="..\:/AndroidStudioProjects/ChatApp33/app/src/main/res/layout/activity_danh_sach_ban_be.xml" value="0.19166666666666668" />
+        <entry key="..\:/AndroidStudioProjects/ChatApp33/app/src/main/res/layout/activity_find_friend.xml" value="0.19166666666666668" />
+        <entry key="..\:/AndroidStudioProjects/ChatApp33/app/src/main/res/layout/activity_forgot_password.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/ChatApp33/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/ChatApp33/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/AndroidStudioProjects/ChatApp33/app/src/main/res/layout/activity_main2.xml" value="0.19166666666666668" />
+        <entry key="..\:/AndroidStudioProjects/ChatApp33/app/src/main/res/layout/activity_profile.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/ChatApp33/app/src/main/res/layout/activity_see_pic.xml" value="0.19166666666666668" />
+        <entry key="..\:/AndroidStudioProjects/ChatApp33/app/src/main/res/layout/activity_setup.xml" value="0.19166666666666668" />
+        <entry key="..\:/AndroidStudioProjects/ChatApp33/app/src/main/res/layout/activity_show_all_user_chat.xml" value="0.19166666666666668" />
+        <entry key="..\:/AndroidStudioProjects/ChatApp33/app/src/main/res/layout/activity_show_profile_ban_be.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/ChatApp33/app/src/main/res/layout/activity_view_friend.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/ChatApp33/app/src/main/res/layout/activity_xem_hinh_anh.xml" value="0.19166666666666668" />
+        <entry key="..\:/AndroidStudioProjects/ChatApp33/app/src/main/res/layout/app_bar_chat.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/ChatApp33/app/src/main/res/layout/bottom_edit_profile.xml" value="0.19166666666666668" />
+        <entry key="..\:/AndroidStudioProjects/ChatApp33/app/src/main/res/layout/draer_header_bar.xml" value="0.18871794871794872" />
         <entry key="..\:/AndroidStudioProjects/ChatApp33/app/src/main/res/layout/main_appbar.xml" value="0.2604166666666667" />
-        <entry key="..\:/AndroidStudioProjects/ChatApp33/app/src/main/res/layout/signle_view_friend.xml" value="0.2604166666666667" />
-        <entry key="..\:/AndroidStudioProjects/ChatApp33/app/src/main/res/layout/signview_tinnhan.xml" value="0.2604166666666667" />
+        <entry key="..\:/AndroidStudioProjects/ChatApp33/app/src/main/res/layout/signle_view_friend.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/ChatApp33/app/src/main/res/layout/signview_tinnhan.xml" value="0.22" />
         <entry key="..\:/AndroidStudioProjects/ChatApp33/app/src/main/res/layout/single_view_comment.xml" value="0.2604166666666667" />
         <entry key="..\:/AndroidStudioProjects/ChatApp33/app/src/main/res/layout/single_view_post.xml" value="0.2604166666666667" />
         <entry key="..\:/AndroidStudioProjects/ChatApp33/app/src/main/res/layout/tim_kiem_ban_be.xml" value="0.2604166666666667" />

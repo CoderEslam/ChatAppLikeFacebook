@@ -5,8 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Setup">
-    <include layout="@layout/main_appbar"
-        android:id="@+id/app_bar"></include>
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/main_appbar"></include>
 
     <androidx.cardview.widget.CardView
         android:layout_width="0dp"
@@ -20,8 +22,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
+            android:layout_height="match_parent">
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/profile_image"
@@ -55,7 +56,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="8dp"
                 android:ems="10"
-                android:hint="Thành Phố"
+                android:hint="City"
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -69,7 +70,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="8dp"
                 android:ems="10"
-                android:hint="Quốc Gia"
+                android:hint="Nation"
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -83,7 +84,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="8dp"
                 android:ems="10"
-                android:hint="Nghề Nghiệp"
+                android:hint="Job"
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -103,7 +104,6 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

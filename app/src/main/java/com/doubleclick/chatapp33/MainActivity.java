@@ -202,7 +202,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     @Override
                     public void onClick(View view) {
                         // chuyển màn hình khi sự kiện được kích hoạt
-                        Intent intent  =  new Intent(MainActivity.this , XemHinhAnhActivity.class);
+                        Intent intent  =  new Intent(MainActivity.this , SeePicturesActivity.class);
                         intent.putExtra("urlImage",model.getPostImageUri() ); // gửi địa chỉ của hình ảnh nhận được thông qua intent
                         startActivity(intent);
                     }

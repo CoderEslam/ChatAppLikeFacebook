@@ -58,7 +58,7 @@
                 android:id="@+id/addressShowBanBe"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nam Dinh City "
+                android:text="Nam Dinh City"
                 android:textColor="@color/colorWhile"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -73,7 +73,7 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="16dp"
                 android:background="@drawable/btn_perform"
-                android:text="Kết Bạn "
+                android:text="Make friend"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/view3" />
@@ -84,7 +84,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/btn_decline"
-                android:text="Từ Chối"
+                android:text="Refuse"
                 app:layout_constraintEnd_toEndOf="@+id/btnNhanTinShowBanBe"
                 app:layout_constraintStart_toStartOf="@+id/btnNhanTinShowBanBe"
                 app:layout_constraintTop_toBottomOf="@+id/btnNhanTinShowBanBe" />

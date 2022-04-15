@@ -15,13 +15,13 @@ import android.widget.ImageView;
 
 import com.squareup.picasso.Picasso;
 
-public class XemHinhAnhActivity extends AppCompatActivity {
+public class SeePicturesActivity extends AppCompatActivity {
 
     ImageView imageView , btnDownload;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_xem_hinh_anh);
+        setContentView(R.layout.activity_see_pic);
 
         imageView = findViewById(R.id.imageView);
         btnDownload =  findViewById(R.id.imageViewDownload);
@@ -37,7 +37,7 @@ public class XemHinhAnhActivity extends AppCompatActivity {
         btnDownload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new AlertDialog.Builder(XemHinhAnhActivity.this).setTitle("Tải Xuống Hình Ảnh Này")
+                new AlertDialog.Builder(SeePicturesActivity.this).setTitle("Tải Xuống Hình Ảnh Này")
                         .setPositiveButton("Đồng Ý", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {

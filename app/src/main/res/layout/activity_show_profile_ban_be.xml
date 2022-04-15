@@ -75,7 +75,7 @@
                 android:gravity="center"
                 android:paddingLeft="40dp"
                 android:paddingRight="40dp"
-                android:text="Nhắn Tin "
+                android:text="Message"
                 android:textAllCaps="false"
                 android:textSize="12sp"
                 app:layout_constraintEnd_toStartOf="@+id/btHuyketBan"
