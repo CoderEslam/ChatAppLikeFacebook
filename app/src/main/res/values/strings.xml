@@ -16,4 +16,7 @@
     <string name="how_do_you_feel_today">How do you feel today?</string>
     <string name="display_name">Display name :</string>
     <string name="hi">Hi</string>
+    <string name="write_a_comment">Write a comment....</string>
+    <string name="your_post">Your post</string>
+    <string name="_0_hours_ago">0 hours ago</string>
 </resources>
