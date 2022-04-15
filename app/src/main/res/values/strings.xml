@@ -19,4 +19,9 @@
     <string name="write_a_comment">Write a comment....</string>
     <string name="your_post">Your post</string>
     <string name="_0_hours_ago">0 hours ago</string>
+    <string name="personal_page">Personal page</string>
+    <string name="friend">Friend</string>
+    <string name="add_friends">Add friends</string>
+    <string name="message">Message</string>
+    <string name="introduce">Introduce</string>
 </resources>

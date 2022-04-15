@@ -8,12 +8,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class banBeMyViewHolder extends RecyclerView.ViewHolder {
+public class FriendMyViewHolder extends RecyclerView.ViewHolder {
 
 
     CircleImageView profileImageUrl;
     TextView username,nghenghiep;
-    public banBeMyViewHolder(@NonNull View itemView) {
+    public FriendMyViewHolder(@NonNull View itemView) {
         super(itemView);
         profileImageUrl  = itemView.findViewById(R.id.profileImageShowBanBe);
         username  = itemView.findViewById(R.id.usernameShowBanBe);

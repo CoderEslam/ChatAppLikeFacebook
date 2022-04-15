@@ -22,10 +22,10 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.squareup.picasso.Picasso;
 
-public class Danh_Sach_Ban_BeActivity extends AppCompatActivity {
+public class BookFriendsActivity extends AppCompatActivity {
 
     FirebaseRecyclerOptions<banBe>options;
-    FirebaseRecyclerAdapter<banBe,banBeMyViewHolder>adapter;
+    FirebaseRecyclerAdapter<banBe, FriendMyViewHolder>adapter;
     Toolbar toolbar;
     RecyclerView recyclerView;
     FirebaseAuth mAuth;
@@ -56,9 +56,9 @@ public class Danh_Sach_Ban_BeActivity extends AppCompatActivity {
         // tao 1 cau lenh
         Query query = mRef.child(mUser.getUid()).orderByChild("username").startAt(s).endAt(s+"\uf8ff");
         options = new FirebaseRecyclerOptions.Builder<banBe>().setQuery(query,banBe.class).build();
-        adapter = new FirebaseRecyclerAdapter<banBe, banBeMyViewHolder>(options) {
+        adapter = new FirebaseRecyclerAdapter<banBe, FriendMyViewHolder>(options) {
             @Override
-            protected void onBindViewHolder(@NonNull banBeMyViewHolder holder, final int position, @NonNull banBe model) {
+            protected void onBindViewHolder(@NonNull FriendMyViewHolder holder, final int position, @NonNull banBe model) {
                 Picasso.get().load(model.getProfileImageUrl()).into(holder.profileImageUrl);
                 holder.username.setText(model.getUsername());
                 holder.nghenghiep.setText(model.getNghenghiep());
@@ -69,7 +69,7 @@ public class Danh_Sach_Ban_BeActivity extends AppCompatActivity {
 //                        Intent intent = new Intent(Danh_Sach_Ban_Be.this,ChatActivity.class);
 //                        intent.putExtra("OtherUserID", getRef(position).getKey().toString());
 //                        startActivity(intent);
-                        Intent intent = new Intent(Danh_Sach_Ban_BeActivity.this,ShowProfileBanBeActivity.class);
+                        Intent intent = new Intent(BookFriendsActivity.this,ShowProfileBanBeActivity.class);
                         intent.putExtra("OtherUserID", getRef(position).getKey().toString());
                         startActivity(intent);
 
@@ -80,9 +80,9 @@ public class Danh_Sach_Ban_BeActivity extends AppCompatActivity {
 
             @NonNull
             @Override
-            public banBeMyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+            public FriendMyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
                 View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.signle_view_friend,parent,false);
-                return new banBeMyViewHolder(view);
+                return new FriendMyViewHolder(view);
             }
         };
         adapter.startListening();

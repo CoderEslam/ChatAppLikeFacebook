@@ -1,29 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:id="@+id/firt">
-        <item android:id="@+id/profile"
-            android:title="Trang Cá Nhân"
-            android:icon="@drawable/ic_person"/>
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_person"
+            android:title="@string/personal_page" />
 
-        <item android:id="@+id/firend"
-            android:title="Bạn Bè"
-            android:icon="@drawable/ic_my_friend"/>
+        <item
+            android:id="@+id/firend"
+            android:icon="@drawable/ic_my_friend"
+            android:title="@string/friend" />
 
-        <item android:id="@+id/find_friend"
-            android:title="Thêm Bạn Bè"
-            android:icon="@drawable/ic_add_friend"/>
+        <item
+            android:id="@+id/find_friend"
+            android:icon="@drawable/ic_add_friend"
+            android:title="@string/add_friends" />
 
-        <item android:id="@+id/chat"
-            android:title="Tin Nhắn"
-            android:icon="@drawable/ic_tin_nhan"/>
-        <item android:id="@+id/about"
-            android:title="Giới Thiệu"
-            android:icon="@drawable/ic_about_app"/>
+        <item
+            android:id="@+id/chat"
+            android:icon="@drawable/ic_tin_nhan"
+            android:title="@string/message" />
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/ic_about_app"
+            android:title="@string/introduce" />
     </group>
     <group android:id="@+id/drawer_second">
-        <item android:id="@+id/logout"
-            android:title="Đăng Xuất"
-            android:icon="@drawable/ic_loout"/>
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_loout"
+            android:title="Log out" />
 
     </group>
 </menu>

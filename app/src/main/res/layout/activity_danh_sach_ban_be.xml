@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Danh_Sach_Ban_BeActivity">
+    tools:context=".BookFriendsActivity">
 
 </androidx.constraintlayout.widget.ConstraintLayout>
